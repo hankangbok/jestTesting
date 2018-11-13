@@ -1,8 +1,8 @@
+// Tests for simple functions (sum two #'s, capitalize a string, reverse a string)
 const original = require('./sum');
 const sum = original.sum;
 const capitalize = original.capitalize;
 const reverseString = original.reverseString; 
-const calculator = original.calculator;
 const caesarCipher = original.caesarCipher;
 
 test('adds 1 + 2 to equal 3', () => {
@@ -31,9 +31,12 @@ test('reverses a >1 length string', () => {
   expect(reverseString('asdf')).toEqual('fdsa');
 });
 
-// calculator Tests
+// reverses a string with whitespace
+test('reverses a >1 length string', () => {
+  expect(reverseString('Check this Out')).toEqual('tuO siht kcehC');
+});
 
-// cipher tests
+
 
 // test basic syntax template
 // test('', () => {
