@@ -18,3 +18,12 @@ or
 ```
   npm test --watch
 ```
+## Future updates:
+CaesarCipher: Ensure that mixed-case strings are correctly converted.
+~~CaesarCipher: Successfully convert strings including punctuation~~
+~~CaesarCipher: Successfully convert strings including whitespace~~
+~~All functions: Run tests to make sure that blank strings, argumentless passes are accounted for.~~
+
+## Technologies Used: 
+JavaScript, Jest, npm
+

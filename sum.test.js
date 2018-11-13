@@ -3,7 +3,6 @@ const original = require('./sum');
 const sum = original.sum;
 const capitalize = original.capitalize;
 const reverseString = original.reverseString; 
-const caesarCipher = original.caesarCipher;
 
 test('adds 1 + 2 to equal 3', () => {
   expect(sum(1, 2)).toBe(3);

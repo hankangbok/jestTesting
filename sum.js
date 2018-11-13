@@ -1,9 +1,10 @@
+// Sums numbers a, b
 function sum(a, b) {
   return a + b;
 }
 
+// Takes a string and returns w 1st char capitalized
 function capitalize(str) {
-  // Takes a string and returns w 1st char capitalized
   if(str.length>1) {
     return(str.charAt(0).toUpperCase() + str.slice(1,str.length));
   }
@@ -15,6 +16,8 @@ function capitalize(str) {
   }
 }
 
+// Takes a String
+// Returns the string in reverse
 function reverseString(str) {
   let copyStr = str.split("");
   let newStr='';
@@ -24,20 +27,4 @@ function reverseString(str) {
   return newStr;
 }
 
-function calculator() {
-
-}
-// Should be able to add subtract divide and multiply
-
-function caesarCipher() {
-
-}
-// Each letter of the alphabet is shifted a certain # of places
-// should take the # of places shifted
-// The cipher is 3(x) = (x+k) (mod26)
-// Test keeping same case
-// Test punctuation
-
-
-// module.exports = {sum:sum,capitalize:capitalize, reverseString:reverseString, calculator:calculator, caesarCipher:caesarCipher}
-module.exports = {sum, capitalize, reverseString,calculator, caesarCipher}
+module.exports = {sum, capitalize, reverseString}

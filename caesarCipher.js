@@ -8,9 +8,14 @@ function caesarCipher(testString, shiftQuantity) {
   let shiftedVal=0;
   let shiftedStringSplit = [];
   for (i=0;i<splitString2.length; i++) {
-    indexVal = alphabet.indexOf(splitString2[i]);
-    shiftedVal= indexVal+ shiftQuantity;
-    shiftedStringSplit.push(alphabet[shiftedVal%26]);
+    if (alphabet.indexOf(splitString2[i])==-1) {
+      shiftedStringSplit.push(splitString2[i]);
+    }
+    else {
+      indexVal = alphabet.indexOf(splitString2[i]);
+      shiftedVal= indexVal+ shiftQuantity;
+      shiftedStringSplit.push(alphabet[shiftedVal%26]);
+    }
   }
   return shiftedStringSplit.join("");
 }
